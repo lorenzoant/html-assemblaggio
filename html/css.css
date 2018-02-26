@@ -1,0 +1,104 @@
+#header{
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+#header2{
+  font-weight: bold;
+  color: green;
+  text-decoration: none;
+  text-align: center;
+}
+body{
+  background-image: url(../immagini/back.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 18px;
+  text-align: justify;
+}
+#sec{
+  height: 700px;
+  width: 80%;
+  float: right;
+  background-color: white;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  padding: 5px;
+}
+#sec2{
+  height: auto;
+  width: 80%;
+  float: right;
+  background-color: white;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  padding: 5px;
+}
+#nav{
+  float: left;
+  text-decoration: none;
+  font-size: 15px;
+}
+#sq{
+  list-style: square;
+}
+#lcd{
+  float: left;
+}
+#lcd,#sott{
+  height: 400px;
+}
+#sott{
+  float: right;
+}
+.float{
+  float: right;
+}
+#dom{
+  height: 200px;
+}
+#entr{
+  height: 300px;
+}
+#dht{
+  height: 200px;
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+#f{
+  border: 2px;
+  border-style: dashed;
+  float: left;
+  }
+.figure{
+  border: 2px;
+  border-style: dashed;
+  float: right;
+}
+.caption{
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  font: "Bell MT";
+}
+#porta{
+  height: 600px;
+  clear: both;
+}
+#footer{
+  clear: both;
+  height:auto;
+  width: auto;
+  color: black;
+  background-color: white;
+  border: 5px;
+  margin-top: 10px;
+  border-color: grey;
+  border-style: groove;
+  padding: 5px;
+}
