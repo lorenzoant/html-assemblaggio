@@ -65,6 +65,7 @@ body{
 }
 #dom{
   height: 200px;
+  border-radius: 10px;
 }
 #entr{
   height: 300px;
