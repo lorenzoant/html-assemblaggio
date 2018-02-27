@@ -3,7 +3,7 @@
 
   <!--titolo pagina-->
   <head>
-    <title>Luci + IR</title>
+    <title>ASSEMBLAGGIO</title>
     <link rel="stylesheet" href="css.css" media="screen" type="text/css">
   </head>
 
@@ -13,8 +13,8 @@
       <section id="sec2">
         <!--titolo-->
         <header>
-          <h1 id="header">Progetto casa domotica</h1>
-          <h3 id="header2">Luci interne con telecomando</h3>
+          <h1 id="header">Laboratorio Assemblaggio</h1>
+          <h3 id="header2">Assemblaggio</h3>
         </header>
         <!--testo-->
         <figure class="figure">
@@ -22,35 +22,24 @@
           <figcaption class="caption">Illuminazione della casa</figcaption>
         </figure>
 
-        <p>Per l&#180;illuminazione interna della casa abbiamo optato per dei semplici diodi led interni alle pareti che distribuiscono una luce uniforme in tutta la struttura.</p>
+        <p>Abbiamo suddiviso l'operazione in (ahia) passaggi: <br> 
+		<ul>
+		<li> Abbiamo disposto il case in orizzontale per poter facilitare il lavoro dell'assemblaggio. </li>
+		<li> Abbiamo disposto la scheda madre sui distanziali presenti sul case, avvitandola con un layout a croce per distribuire bene il carico ed evitare punti maggiormente sottopressione. </li>
+		<li> Abbiamo inserito la CPU nel socket (dopo averlo aperto), facendo attenzione a non toccare i piedini ne' sotto la CPU ne'quelli presenti sulla scheda madre. Ci siamo poi assicurati che fosse ben saslda muovendola leggermente nel sochet.</li>
+		<li> Abbiamo chiuso il sochet tramite l-appositaleve presente sulla scheda madre</li>
+		<li> Abbiamo applicato un chicco di pasta termica al centro della CPU per favorire il passaggio di calore tra Dissipatore e CPU</li>
+		<li> Seguendo i fori sulla scheda madre, abbiamo fissato il dissipatore, avvitandolo, come sempre, a croce</li>
+		<li> Abbiamo inserito e fissato i vari HDD e CD-ROM e collegati tramite il cavo SATA ai rispettivi ingressi su scheda madre</li>
+		<li> Abbiamo posizionato le RAM nei vari slot, seguendo le direttive per eseguire il dual-channel (se possibile) presenti nel manuale, posizionandole nella corretta posizione, controllando la posizione dell'incavo sulla Scheda Madre</li>
+		<li> Abbiamo inserito la scheda video nel primo slot PCI-E libero presente sulla Scheda Madre partendo dall'alto, bisogna inserirla finche' non si sente lo scatto della sicura che impedisce alla scheda di staccarsi. Successivamente abbiamo assicurato la scheda video al case tramite una vite</li>
+		<li> Dopo aver fissato l'alimentatore nel case nel corretto slot, abbiamo collegato il 24-pin della chedda madre e i vari cavi di alimentazione SATA degli HDD e CD-ROM.</li>
+		<li> Seguendo il manuale della scheda madre, abbiamo collegato il pannello frontale del case sulla scheda madre</li>
+		<li> Abbiamo chiuso entrambe le paratie laterali e collegato alla corrente e periferiche</li>
+		<li> ATTENZIONE: se durante l'avvio il computer da errori, ascoltare i beep emessi e cercare i codici di errore sul manuale.</li>
+		</ul>
+		</p>
 
-        <p>Sono in totale 8 luci disposte a coppie ai 2 lati minori, tutte i led sono poi collegati ad un arduino mega che dispone di porte PWM che verranno usate per modificare la luminosit&agrave; dei led.</p>
-
-        <p>Per quanto riguarda il telecomando abbiamo utilizzato un lettore ad infrarossi e un comune telecomando ad infrarossi.</p>
-
-        <p>Il lettore IR si collega ad arduino cos&igrave;:</p>
-
-        <p>Il lettore ir ci permetter&agrave; di leggere i comandi inviati da telecomando.
-           Per impostare correttamente la lettura dei tasti premuti, su internet si trovano facilmente i codici corrispondenti ai tasti premuti e che quindi ci permettono, tramite uno switch, di assegnare le varie azioni da far fare all&#180;arduino al ricevimento dei vari codici. Abbiamo scelto di assegnare al pulsante di accensione l&#180;accensione effettiva delle luci a intensit&agrave; bassa, il pulsante vol+  ci permetter&agrave; di aumentare l&#180;intensit&agrave; e il pulsante vol- far&agrave; abbassare l&#180;intensit&agrave; della luce.
-           </p>
-         <img src="../immagini/tabella4.gif">
-
-         <figure class="figure">
-           <img src="../immagini/inf.gif" id="dom">
-           <figcaption class="caption">Telecomando e ricevitore a infrarossi</figcaption>
-         </figure>
-
-         <p>Abbiamo deciso di dividere l&#180;intensit&agrave; in 3 stadi, dividendo l&#180;intesit&agrave; massima (255 [frequenza massima dei pin PWM]) per 3, facendo dei salti di 85 alla volta, permettendoci, cos&igrave;, di scegliere tra un intesit&agrave; bassa, media e alta.</p>
-
-         <p>Al tasto 0 abbiamo collegato anche 3 led che rappresentano un ipotetico caminetto.</p>
-
-         <p>Per collegare ogni led abbiamo utilizzato una breadboard sulla quale abbiamo disposto una resistenza da 220&Omega; per ogni led che abbiamo poi collegato in questo modo:</p>
-
-         <figure class="figure">
-           <img src="../immagini/luci.gif" id="entr">
-           <figcaption class="caption">Qui si vede come abbiamo inserito <br> i led nelle pareti</figcaption>
-         </figure>
-          <img src="../immagini/tabella6.gif">
       </section>
       <!--barra laterale-->
       <nav id="nav">
@@ -74,7 +63,7 @@
 
       <!--bara inferiore-->
         <footer id="footer">
-          Per ulteriori informazioni telefona al: 331 262 4945 opure invia una mail a <a id="fot" href="mailto:lorenzoantoniazzi@libero.it">lorenzoantoniazzi@libero.it</a>
+          <a id="fot" href="https://www.cobianchi.it/">Clicca qui</a> per saperne di più sui nostri corsi e la nostra scuola.
         </footer>
   </body>
 </html>
