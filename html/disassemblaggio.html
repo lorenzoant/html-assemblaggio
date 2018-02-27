@@ -3,7 +3,7 @@
 
   <!--titolo pagina-->
   <head>
-    <title>Sensore di movimento</title>
+    <title>Disassemblaggio</title>
     <link rel="stylesheet" href="css.css" media="screen" type="text/css">
   </head>
 
@@ -13,8 +13,8 @@
       <section id="sec2">
         <!--titolo-->
         <header>
-          <h1 id="header">Progetto casa domotica</h1>
-          <h3 id="header2">Sensore di movimento</h3>
+          <h1 id="header">Laboratorio Assemblaggio</h1>
+          <h3 id="header2">Disassemblaggio</h3>
         </header>
         <!--testo-->
         <figure class="figure">
@@ -22,14 +22,20 @@
           <figcaption class="caption">Sensore di movimento</figcaption>
         </figure>
 
-        <p>All&#180;entrata della casa abbiamo simulato un vialetto dotato di luci che si accendono all&#180;ipotetico passaggio di una persona, per permettere ci&ograve; ci siamo serviti di un sensore di movimento e di diodi LED. Il sensore di movimento &egrave; impostato (grazie alle viti presenti a lato) al minimo della distanza (3m che poi limiteremo come possibile siccome verr&agrave; usata per un ambiente molto piccolo e quindi il suo
-        raggio di lettura che &egrave; circa 110&deg; e la sua elevata sensibilit&agrave; potrebbero essere un problema) e al minimo del tempo (poich&egrave; il periodo per cui deve rimanere attivo lo aggiusteremo all&#180;interno del programma).</p>
+        <p> Per il disassemlaggio abbiamo:
+		<ul>
+		<li> Scollegato il cavo di alimentazione e staccato tutte le periferiche.</li>
+		<li> Aspettato 30 secondi per assicurarci che i condensatori dell'alimentatore fossero scarichi</li>
+		<li> Ponendo il case in verticale abbiamo rimosso entrambelle paratie laterali dopo aver svitato le viti</li>
+		<li> Dopo aver tolto le sicure laterali delle RAM, le abbiamo rimosse, tirandole verso l'alto</li>
+		<li> svitato la vite della scheda video e tolta dopo aver rimosso la sicura</li>
+		<li> Abbiamo rimosso le altre schede di espansione</li>
+		<li> Svitato il dissipatore della CPU e rimosso dalla scheda madre. Abbiamo poi pulito la parte metallica che entra in contatto con la CPU</li>
+		<li> </li>
+     	</ul>
+		</p>
 
-        <p>Il sensore viene collegato in questo modo:</p>
-        <img src="../immagini/tabella7.gif">
-        <img src="../immagini/sensmov.gif"id="entr">
-
-        <p>Alla rilevazione di un movimento si accenderanno dei led che, come quelli della casa, saranno collegati direttamente ad arduino con una resistenza e rimarranno accesi per un breve intervallo di tempo.</p>
+       
 
 
 
