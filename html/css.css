@@ -11,7 +11,7 @@
   text-align: center;
 }
 body{
-  background-image: url(../immagini/back.gif);
+  background-image: url(../immagini/Sfondo.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 18px;
@@ -26,6 +26,7 @@ body{
   border-color: black;
   border-style: solid;
   padding: 5px;
+  border-radius: 20px;
 }
 #sec2{
   height: auto;
@@ -41,6 +42,11 @@ body{
   float: left;
   text-decoration: none;
   font-size: 15px;
+  background-color: lightgrey;
+  border-radius: 20px;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
 }
 #sq{
   list-style: square;
@@ -101,4 +107,5 @@ body{
   border-color: grey;
   border-style: groove;
   padding: 5px;
+  border-radius: 20px;
 }
