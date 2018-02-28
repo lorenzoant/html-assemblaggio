@@ -88,7 +88,12 @@ body{
   border-style: dashed;
   float: right;
   border-radius: 5px;
-  padding: 50px;
+  margin: 10px;
+}
+.importante{
+  text-decoration: underline;
+  font-weight: bold;
+  color: red;
 }
 .caption{
   text-align: center;
@@ -97,8 +102,9 @@ body{
   font: "Bell MT";
 }
 #porta{
-  height: 600px;
+  height: 400px;
   clear: both;
+  border-radius: 5px;
 }
 #footer{
   clear: both;
