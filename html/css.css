@@ -37,6 +37,7 @@ body{
   border-color: black;
   border-style: solid;
   padding: 5px;
+  border-radius: 20px;
 }
 #nav{
   float: left;
@@ -86,6 +87,8 @@ body{
   border: 2px;
   border-style: dashed;
   float: right;
+  border-radius: 5px;
+  padding: 50px;
 }
 .caption{
   text-align: center;
