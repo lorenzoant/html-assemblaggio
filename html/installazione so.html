@@ -3,7 +3,7 @@
 
   <!--titolo pagina-->
   <head>
-    <title>Porta con lettore di carte magnetiche</title>
+    <title>Installazione SO</title>
     <link rel="stylesheet" href="css.css" media="screen" type="text/css">
   </head>
 
@@ -13,45 +13,31 @@
       <section id="sec2">
         <!--titolo-->
         <header>
-          <h1 id="header">Progetto casa domotica</h1>
-          <h3 id="header2">Porta con lettore di carte magnetiche</h3>
+          <h1 id="header">Laboratorio assemblaggio</h1>
+          <h3 id="header2">Installazione SO</h3>
         </header>
         <!--testo-->
         <figure class="figure">
           <img src="../immagini/entrata.gif" id="entr">
-          <figcaption class="caption">Entrata della casa. <br>A destra della porta si vede il lettore di carte magnetiche.</figcaption>
+          <figcaption class="caption">Coso <br></figcaption>
         </figure>
 
-        <p>Abbiamo deciso di pilotare l&#180;apertura e la chiusura della porta della nostra casa utilizzando un sensore di carte magnetiche cos&igrave; da rendere sicuro e veloce un ipotetico accesso da parte di un utente (come viene gi&agrave; utilizzato in alcuni Hotel).</p>
+        <p>Per l'installazione di un sistema operativo bisogna:</p>
 
-        <p>Per poter realizzare ci&ograve; ci siamo serviti di un lettore di tessere magnetiche, pi&ugrave; precisamente l&#180;RFID-RC522 che tramite la libreria di arduino RFID ci permette di leggere il codice presente in una data tessera magnetica.</p>
+		<ul>
+		<li> Bisogna come prima cosa, creare una chiavetta eseguibile su un computer esterno tramite il download della ISO e un programma che crea chiavette eseguibili come RUFUS</li>
+		<li> Bisogna inserire la chiavetta nel primo slot USB disponibile</li>
+		<li> Bisogna, all'avvio del pc, entrare nel BIOS (solitamente con i tasti DEL o F2)</li>
+		<li> Dopo essere entrati nel BIOS, bisogna entrare nella sezione di BOOT Option per selezionare la chiavetta con il Sistema Operativo da installare</li>
+		<li> Bisogna riavviare il PC e aspettare l'avvio della chiavetta</li>
+		<li> Qua l'installazione differisce in base al Sistema Operativo. In quello che abbiamo scelto noi, Ubuntu Budgie 64, l'intallazione è uguale a tutte e altre versioni Linux Based (online si trovano parecchie guide)</li>
+		<li> Abbiamo scelto una versione Linux perchè è tra i Sitemi Operativi più leggeri ed efficienti ed era la scelta migliore in base al PC a disposizione</li>
+		<li> Molto Buono.</li>
+		</ul>
 
-        <p>Il lettore di schede &egrave; composto da diversi pin che andranno a collegarsi ad un arduino in questo modo:</p>
-          <img src="../immagini/tabella1.gif">
+        
 
-        <p>
-
-          <figure class="figure">
-          <img src="../immagini/servo.gif" id="entr">
-          <figcaption class="caption">Servo utilizzato per la porta</figcaption>
-        </figure>
-
-        Per quanto riguarda lo sblocco della porta abbiamo optato per l&#180;uso di un servo motore per riuscire ad aprire e chiudere la porta. L&#180;utilizzo di un servo motore inoltre non richiede molta potenza e, grazie alla libreria SERVO presente in Arduino, riesce ad essere anche semplice e a non occupare troppo codice.  Per poter utilizzare il servo abbiamo dovuto collegarlo ad una porta PWM che ha la peculiarit&agrave; di riuscire a modulare la lunghezza d&#180;onda del segnale digitale (duty cycle) e a trasmettere al servo tramite l&#180;apposito cavetto il movimento da eseguire. Inoltre il servo deve essere collegato ad un 5v per alimentarlo e a GND. La disposizione da noi scelta per i pin si potr&agrave; quindi riassumere in:</p>
-          <img src="../immagini/tabella2.gif">
-
-       <p>Tramite IDE noi possiamo decidere l&#180;angolazione a cui portare il nostro servo quindi per noi 0&deg; vorr&agrave; dire porta chiusa mentre 90&deg; vorr&agrave; dire porta aperta.
-          Per concludere la parte del progetto che riguarda la porta, siccome non vi sar&agrave; alcun modo per comunicare all&#180;utente una lettura errata del codice della tessera, abbiamo collegato un buzzer attivo che suoner&agrave; quando il codice letto sar&agrave; diverso da quello accettato e funger&agrave; come una sorta di &#34;allarme&#34;.
-          Il buzzer &egrave; un componente molto semplice che possiede solamente un piedino per l&#180;alimentazione e uno per il GND e quando viene attraversato da una tensione emette un suono.
-          Una volta montati tutti i componenti si mostreranno cos&igrave;:
-       </p>
-       <img src="../immagini/porta.gif" id="porta">
-       <figure class="figure">
-       <img src="../immagini/nano.gif" id="entr">
-       <figcaption class="caption">Arduino Nano</figcaption>
-       </figure>
-
-       <p>Come si pu&ograve; notare dallo schema, tutti i componenti sono stati collegati ad un Arduino Nano. Abbiamo fatto questa scelta per via della sua grandezza, dal costo ridotto e dal numero ridotto di pin che quindi eviteremo di sprecare. Inoltre, una suddivisione del progetto in parti pi&ugrave;  piccole controllate da pi&ugrave; Arduino, ci permette di avere un esecuzione complessiva pi&ugrave; responsiva e con meno complicazioni dovute ad un codice pi&ugrave; esteso e quindi pi&ugrave; difficile da controllare e lento da eseguire.</p>
-
+      
       </section>
 
       <!--barra laterale-->
